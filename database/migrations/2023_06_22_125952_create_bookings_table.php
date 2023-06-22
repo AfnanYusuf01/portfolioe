@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('email');
+            $table->string('subjek');
+            $table->string('pesan');
             $table->timestamps();
         });
     }
